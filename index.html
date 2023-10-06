@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ChatGPT</title>
+</head>
+<body>
+    <div class="app light">
+        <aside>
+            <nav>
+                <div class="nav-top">
+                    <button id="add-chat">
+                        <iconify-icon icon="bi:plus-lg"></iconify-icon>New Chat   
+                    </button>
+                    <ul class="chats">
+                        <li class="newchat" id="0">
+                            <div>
+                                <iconify-icon icon="bi:chat-left" class="icon"></iconify-icon>
+                                <span class="chat-title">New Chat</span>
+                            </div>
+                            <div>
+                                <iconify-icon icon="bi:trash3" class="icon" onclick="removechat(this)"></iconify-icon></iconify-icon>
+                                <iconify-icon icon="bi:pen" class="icon" onclick="updatechatTitle(this)"></iconify-icon>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li id="delete">
+                        <iconify-icon icon="bi:trash3" class="icon"></iconify-icon>CLear Conversations
+                    </li>
+                    <!-- <li>
+                        <iconify-icon icon="bi:gear" class="icon"></iconify-icon>Settings
+                    </li> -->
+                    <li id="mode">
+                        <iconify-icon icon="bi:brightness-high" class="icon"></iconify-icon>Dark Mode
+                    </li>
+                    <!-- <li>
+                        <iconify-icon icon="bi:globe-americas" class="icon"></iconify-icon>English
+                    </li> -->
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="hints">
+                <img src="Images/logo.png" alt="" class="logo">
+                <p>ChatGPT</p>
+            </div>
+            <div class="qna">
+                
+            </div>
+            <div class="request">
+                <iconify-icon icon="bi:person-fill-gear" class="icon"></iconify-icon>
+                <input type="text" placeholder="Send a message..." autofocus>
+                <button id="send">Send</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
