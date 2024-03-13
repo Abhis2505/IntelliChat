@@ -1,1 +1,1 @@
-ChatClone is an AI-powered chatbot designed to replicate the conversational abilities of ChatGPT. It can answer questions, engage in discussions, offer recommendations, and assist with a wide range of tasks.
+IntelliChat is an AI-powered chatbot designed to replicate the conversational abilities of ChatGPT. It can answer questions, engage in discussions, offer recommendations, and assist with a wide range of tasks.
